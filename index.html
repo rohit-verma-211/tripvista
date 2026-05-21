@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TripVista – Explore the World</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ 
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Trip<span>Vista</span></div>
+  <div class="nav-links">
+    <a href="#">Flights</a>
+    <a href="#">Hotels</a>
+    <a href="#">Trains</a>
+    <a href="#">Holidays</a>
+    <a href="#">Cruises</a>
+    <a href="#">Activities</a>
+    <a href="#">More ▾</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn-outline">Sign In</button>
+    <button class="btn-fill">Register</button>
+  </div>
+</nav>
+ 
+<!-- HERO -->
+<section class="hero">
+  
+ 
+  <div class="hero-content">
+    <div class="hero-badge">✈️ &nbsp;Best Fares Guaranteed</div>
+    <h1>Travel the World<br/>with <em>Confidence</em></h1>
+    <p>Discover flights, hotels, trains and curated holiday packages — all in one place, at unbeatable prices.</p>
+  </div>
+ 
+  <!-- Search Box -->
+  <div class="search-box">
+    <div class="travel-navbar">
+
+    <div class="tabs-wrapper">
+      <div class="tabs" role="tablist" aria-label="Tab navigation">
+
+        <button class="tab active" data-tab="flights">
+  <span class="tab-content">
+    <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10.18 9"></path>
+      <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"></path>
+    </svg>
+    Flights
+  </span>
+
+  
+</button>
+
+        <button class="tab" data-tab="hotels">
+  <span class="tab-content">
+    <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 21h18"></path>
+      <path d="M5 21V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v14"></path>
+      <path d="M15 11h2a2 2 0 0 1 2 2v8"></path>
+      <path d="M8 9h1"></path>
+      <path d="M11 9h1"></path>
+      <path d="M8 13h1"></path>
+      <path d="M11 13h1"></path>
+      <path d="M8 17h1"></path>
+      <path d="M11 17h1"></path>
+    </svg>
+    Hotels
+  </span>
+
+  
+</button>
+
+        <button class="tab" data-tab="holidays">
+  <span class="tab-content">
+    <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 21h18"></path>
+      <path d="M6 21c0-5 3-9 6-9s6 4 6 9"></path>
+      <path d="M12 12V3"></path>
+      <path d="M8 7c1-2 3-4 4-4s3 2 4 4"></path>
+      <path d="M6 11c2-2 4-3 6-3s4 1 6 3"></path>
+    </svg>
+    Holidays
+  </span>
+</button>
+
+        <button class="tab" data-tab="bus">
+  <span class="tab-content">
+    <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 19v2"></path>
+      <path d="M18 19v2"></path>
+      <path d="M4 11h16"></path>
+      <path d="M5 6h14"></path>
+      <rect x="4" y="3" width="16" height="16" rx="2"></rect>
+      <circle cx="8" cy="15" r="1"></circle>
+      <circle cx="16" cy="15" r="1"></circle>
+    </svg>
+    Bus
+  </span>
+</button>
+
+        <button class="tab" data-tab="trains">
+  <span class="tab-content">
+    <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="3" width="16" height="14" rx="2"></rect>
+      <path d="M8 21l2-4"></path>
+      <path d="M16 21l-2-4"></path>
+      <path d="M8 7h8"></path>
+      <path d="M8 11h8"></path>
+      <circle cx="8" cy="15" r="1"></circle>
+      <circle cx="16" cy="15" r="1"></circle>
+    </svg>
+    Trains
+  </span>
+</button>
+
+        
+
+        
+      </div>
+    </div>
+
+    <div class="ai-box">
+      
+    </div>
+
+  </div>
+
+  
+
+    <div class="search-row">
+      <div class="s-field">
+        <div class="s-label">From</div>
+        <input type="text" placeholder="Delhi (DEL)" value="Delhi (DEL)" />
+      </div>
+      <div class="s-field">
+        <div class="s-label">To</div>
+        <input type="text" placeholder="Japan (JPY)" />
+      </div>
+      <div class="s-field">
+        <div class="s-label">Departure</div>
+        <input type="date" />
+      </div>
+      <div class="s-field">
+        <div class="s-label">Return</div>
+        <input type="date" />
+      </div>
+      <div class="s-field">
+        <div class="s-label">Travellers &amp; Class</div>
+        <select>
+          <option>1 Adult · Economy</option>
+          <option>2 Adults · Economy</option>
+          <option>1 Adult · Business</option>
+          <option>Family · Economy</option>
+        </select>
+      </div>
+      <button class="search-btn">Search</button>
+    </div>
+  </div>
+ 
+  
+</section>
+ 
+<!-- CATEGORIES -->
+
+
+  <section class="categories">
+    <div class="section-header flex-between">
+      <div>
+        <div class="section-label">What Are You Looking For?</div>
+        <div class="section-title">Browse by <em>Category</em></div>
+      </div>
+    </div>
+
+    <div class="cat-grid">
+
+      <a class="cat-card" href="#">
+        <div class="cat-icon blue">
+          <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/>
+          </svg>
+        </div>
+        <div class="cat-name">Flights</div>
+      </a>
+
+      <a class="cat-card" href="#">
+        <div class="cat-icon green">
+          <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M3 21h18"/>
+            <path d="M5 21V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v14"/>
+            <path d="M15 11h2a2 2 0 0 1 2 2v8"/>
+            <path d="M8 9h1"/>
+            <path d="M11 9h1"/>
+            <path d="M8 13h1"/>
+            <path d="M11 13h1"/>
+            <path d="M8 17h1"/>
+            <path d="M11 17h1"/>
+          </svg>
+        </div>
+        <div class="cat-name">Hotels</div>
+      </a>
+
+      <a class="cat-card" href="#">
+        <div class="cat-icon yellow">
+          <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <rect x="4" y="3" width="16" height="14" rx="2"/>
+            <path d="M8 21l2-4"/>
+            <path d="M16 21l-2-4"/>
+            <path d="M8 7h8"/>
+            <path d="M8 11h8"/>
+            <circle cx="8" cy="15" r="1"/>
+            <circle cx="16" cy="15" r="1"/>
+          </svg>
+        </div>
+        <div class="cat-name">Trains</div>
+      </a>
+
+      <a class="cat-card" href="#">
+        <div class="cat-icon orange">
+          <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M6 19v2"/>
+            <path d="M18 19v2"/>
+            <path d="M4 11h16"/>
+            <path d="M5 6h14"/>
+            <rect x="4" y="3" width="16" height="16" rx="2"/>
+            <circle cx="8" cy="15" r="1"/>
+            <circle cx="16" cy="15" r="1"/>
+          </svg>
+        </div>
+        <div class="cat-name">Buses</div>
+      </a>
+
+      <a class="cat-card" href="#">
+        <div class="cat-icon purple">
+          <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M3 21h18"/>
+            <path d="M6 21c0-5 3-9 6-9s6 4 6 9"/>
+            <path d="M12 12V3"/>
+            <path d="M8 7c1-2 3-4 4-4s3 2 4 4"/>
+            <path d="M6 11c2-2 4-3 6-3s4 1 6 3"/>
+          </svg>
+        </div>
+        <div class="cat-name">Holidays</div>
+      </a>
+
+      <a class="cat-card" href="#">
+        <div class="cat-icon sky">
+          <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M3 17h18"/>
+            <path d="M5 17l2-9h10l2 9"/>
+            <path d="M7 8h10"/>
+            <path d="M9 8V5h6v3"/>
+            <path d="M6 21c1 0 1.5-1 3-1s2 1 3 1 1.5-1 3-1 2 1 3 1"/>
+          </svg>
+        </div>
+        <div class="cat-name">Cruises</div>
+      </a>
+
+      <a class="cat-card" href="#">
+        <div class="cat-icon rose">
+          <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M4 4h16v6a8 8 0 0 1-16 0V4z"/>
+            <path d="M8 8h.01"/>
+            <path d="M16 8h.01"/>
+            <path d="M9 13c1.5 1 4.5 1 6 0"/>
+            <path d="M6 20h12"/>
+          </svg>
+        </div>
+        <div class="cat-name">Activities</div>
+      </a>
+
+      <a class="cat-card" href="#">
+        <div class="cat-icon gray">
+          <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M3 13l2-5a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 5"/>
+            <path d="M5 13h14"/>
+            <path d="M6 16h.01"/>
+            <path d="M18 16h.01"/>
+            <path d="M5 13v5"/>
+            <path d="M19 13v5"/>
+            <path d="M7 18v2"/>
+            <path d="M17 18v2"/>
+          </svg>
+        </div>
+        <div class="cat-name">Car Rental</div>
+      </a>
+
+    </div>
+  </section>
+
+  
+ 
+<!-- DESTINATIONS -->
+<section>
+  <div class="section-header flex-between">
+    <div>
+      <div class="section-label">Explore</div>
+      <div class="section-title">Popular <em>Destinations</em></div>
+      <div class="section-sub">Handpicked destinations loved by millions of travellers</div>
+    </div>
+    <a href="#" class="view-all">View All →</a>
+  </div>
+  <div class="dest-grid">
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&q=80" alt="Taj Mahal, Agra"/>
+      <div class="dest-overlay"></div>
+      
+      <div class="dest-info">
+        <div class="dest-name">Agra</div>
+        <div class="dest-meta">✈ 45 min · 🏨 320+ hotels</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Shimla"/>
+      <div class="dest-overlay"></div>
+      
+      <div class="dest-info">
+        <div class="dest-name">Shimla</div>
+        <div class="dest-meta">✈ 1 hr · 🏨 180+ hotels</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali"/>
+      <div class="dest-overlay"></div>
+      
+      <div class="dest-info">
+        <div class="dest-name">Bali</div>
+        <div class="dest-meta">✈ 5.5 hrs · 🏨 900+ hotels</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80" alt="Dubai"/>
+      <div class="dest-overlay"></div>
+      
+      <div class="dest-info">
+        <div class="dest-name">Dubai</div>
+        <div class="dest-meta">✈ 3.5 hrs · 🏨 1,200+ hotels</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=600&q=80" alt="Paris"/>
+      <div class="dest-overlay"></div>
+      
+      <div class="dest-info">
+        <div class="dest-name">Paris</div>
+        <div class="dest-meta">✈ 9 hrs · 🏨 2,100+ hotels</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&q=80" alt="Goa"/>
+      <div class="dest-overlay"></div>
+      
+      <div class="dest-info">
+        <div class="dest-name">Goa</div>
+        <div class="dest-meta">✈ 1 hr · 🏨 540+ hotels</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://gotripzi.com/cdn-cgi/image/onerror=redirect,width=2667,height=2000,fit=cover,format=png/_astro/kathmandu-np-hero.DoCcuR4J.webp" alt="Goa"/>
+      <div class="dest-overlay"></div>
+      
+      <div class="dest-info">
+        <div class="dest-name">Nepal</div>
+        <div class="dest-meta">✈ 3 hr · 🏨 540+ hotels</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://stampedmoments.com/wp-content/uploads/2025/10/spiti-valley-winter-2.jpg" alt="Spiti"/>
+      <div class="dest-overlay"></div>
+      
+      <div class="dest-info">
+        <div class="dest-name">Spiti Valley</div>
+        <div class="dest-meta">✈ 4 hr · 🏨 500+ hotels</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://www.historyhit.com/app/uploads/bis-images/5149777/Great-Wall-of-China-788x537.jpg?x64072" alt="Goa"/>
+      <div class="dest-overlay"></div>
+      
+      <div class="dest-info">
+        <div class="dest-name">Great Wall of China</div>
+        <div class="dest-meta">✈ 10 hr · 🏨 540+ hotels</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://idsb.tmgrup.com.tr/ly/uploads/images/2025/03/12/372657.jpg" alt="Japan"/>
+      <div class="dest-overlay"></div>
+      
+      <div class="dest-info">
+        <div class="dest-name">Japan</div>
+        <div class="dest-meta">✈ 12 hr · 🏨 1000+ hotels</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- other services -->
+<section class="other-services">
+  <div class="container">
+    <h2 class="section-title"> Other <span class="services">Services</span></h2>
+
+    <div class="services-grid">
+
+      <a href="#" class="service-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500&q=80" alt="Adventure">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Adventure</h3>
+          <p>Plan exciting adventure trips.</p>
+          <span>Plan my Trip →</span>
+        </div>
+      </a>
+
+      <a href="#" class="service-card">
+        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=500&q=80" alt="MICE">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>MICE</h3>
+          <p>Meetings and corporate events.</p>
+          <span>Plan my Trip →</span>
+        </div>
+      </a>
+
+      <a href="#" class="service-card">
+        <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=500&q=80" alt="Cruise">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Cruise</h3>
+          <p>Book cruise holiday packages.</p>
+          <span>Plan my Trip →</span>
+        </div>
+      </a>
+
+      <a href="#" class="service-card">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&q=80" alt="Villas & Stays">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Villas & Stays</h3>
+          <p>Private villas and homestays.</p>
+          <span>Plan my Trip →</span>
+        </div>
+      </a>
+
+      <a href="#" class="service-card">
+        <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=500&q=80" alt="Luxury Trains">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Luxury Trains</h3>
+          <p>Royal train journeys.</p>
+          <span>Plan my Trip →</span>
+        </div>
+      </a>
+
+      <a href="#" class="service-card">
+        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=500&q=80" alt="Monuments">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Monuments</h3>
+          <p>Explore historical places.</p>
+          <span>Plan my Trip →</span>
+        </div>
+      </a>
+
+      <a href="#" class="service-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=80" alt="Activities">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Activities</h3>
+          <p>Fun activities and sightseeing.</p>
+          <span>Plan my Trip →</span>
+        </div>
+      </a>
+
+      <a href="#" class="service-card">
+        <img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?w=500&q=80" alt="Gift Voucher">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Gift Voucher</h3>
+          <p>Gift travel experiences.</p>
+          <span>Plan my Trip →</span>
+        </div>
+      </a>
+
+      <a href="#" class="service-card">
+        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&q=80" alt="Freight">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Freight</h3>
+          <p>Freight travel services.</p>
+          <span>Plan my Trip →</span>
+        </div>
+      </a>
+
+      <a href="#" class="service-card">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&q=80" alt="Visa">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Visa</h3>
+          <p>Visa support and assistance.</p>
+          <span>Plan my Trip →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Trip<span>Vista</span></div>
+      <div class="footer-desc">Your one-stop travel partner. Book flights, hotels, trains, holidays, and more. Trusted by 50 million travellers worldwide.</div>
+      <div class="footer-social">
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">𝕏</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">📸</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Train Tickets</a></li>
+        <li><a href="#">Bus Tickets</a></li>
+        <li><a href="#">Holiday Packages</a></li>
+        <li><a href="#">Cruises</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Destinations</h4>
+      <ul>
+        <li><a href="#">Goa</a></li>
+        <li><a href="#">Dubai</a></li>
+        <li><a href="#">Singapore</a></li>
+        <li><a href="#">Bangkok</a></li>
+        <li><a href="#">Bali</a></li>
+        <li><a href="#">Paris</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">My Bookings</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 TripVista. All rights reserved.</span>
+    <span>🔒 Secure Payments &nbsp;|&nbsp; ✅ Verified Listings &nbsp;|&nbsp; 🌟 Best Price Guarantee</span>
+  </div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
